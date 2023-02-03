@@ -167,7 +167,7 @@ class Lexer {
             return Token(tok_start, Token::Kind::nninteger, str,
                          std::stoi(str));
         } else {
-            return Token(tok_start, Token::Kind::real, str, std::stof(str));
+            return Token(tok_start, Token::Kind::real, str, std::stod(str));
         }
     }
 
